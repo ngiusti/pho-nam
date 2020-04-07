@@ -1,0 +1,766 @@
+/* reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    box-sizing: border-box;
+}
+
+body {
+    line-height:1;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    background-color: rgba(16,16,16);
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+input, select {
+    vertical-align:middle;
+}
+
+/* reset end */
+
+.content-block {
+    background-color: rgba(16,16,16);
+    width: 100%;
+    padding: 20% 5%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+/* nav styles */ 
+
+.nav-wrap {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    box-shadow: black 0px 0px 20px 0px;
+}
+
+.nav-item__wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+.nav-item {
+    color: #010101;
+    text-decoration: none;
+    font-size: 6vw;
+}
+
+.nav-logo__wrap {
+    width: 50%;
+    padding: 1.5% 5%;
+}
+
+.nav-logo {
+    width: 35%;
+}
+
+/* nav styles End */ 
+
+
+/* Header Styles  */
+
+.header-block {
+    background-image: url('./assets/pho-nam-bowl.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content__wrap {
+    display: flex;
+    height: 100vh;
+    min-height: 600px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(16,16,16) 10% , transparent 70% ); 
+    padding: 10%;
+
+}
+
+.header-title {
+    font-size: 28vw;
+    color: #20822B;
+    font-weight: 900;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.header-subtitle {
+    font-size: 12vw;
+    color: #f50000;
+    font-weight: 900;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+
+/* Header Styles  End */
+
+/* Menu Styles */
+.menu__wrap {
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    font-size: 15vw;
+    text-align: center;
+}
+
+.menu-subtitle__wrap {
+    width: 100%;
+    margin-bottom: 5vw;
+}
+
+.menu-section__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu-subtitle {
+    font-size: 8vw;
+    line-height: 125%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu-item__wrap {
+    width: 100%;
+    margin: 5%;
+}
+
+.menu-item-title__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+
+.menu-item-title,
+.menu-item-price {
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.menu-item-title {
+    width: 80%;
+}
+
+.menu-choices {
+    text-align: center;
+    margin: 1vw auto;
+    text-transform: capitalize;
+    line-height: 125%;
+    width: 60%;
+    font-size: 4vw;
+}
+
+.menu-item-copy {
+    font-size: 3.5vw;
+    line-height: 145%;
+    text-transform: capitalize;
+}
+
+.menu-item-image {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+}
+
+.menu-item-image-1 {
+    background-image: url('./assets/pho-nam-app.jpg');
+}
+
+.menu-item-image-2 {
+    background-image: url('./assets/pho-nam-bowl-2.jpg');
+}
+
+.menu-item-image-3 {
+    background-image: url('./assets/pho-nam-special.jpg');
+}
+
+/* Menu Styles End */
+
+/* quote Styles */
+
+.quote__wrap {
+    height: 130vw;
+    background-color: #20822B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: skew(0deg, 10deg);
+}
+
+.quote-content__wrap {
+    margin: 10vw;
+}
+
+.quote-copy {
+    width: 85%;
+    font-size: 7.5vw;
+    margin: 0 auto;
+    line-height: 125%;
+    text-align: center;
+    transform: skew(0deg, -10deg);
+}
+
+/* quote Styles End */
+
+/* Location Styles */
+
+.location__wrap {
+    padding-top: 20vw;
+}
+
+.location-content__wrap {
+    min-height: 300px;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.location-image {
+    width: 100%;
+    height: auto;
+}
+
+.location-title {
+    font-size: 15vw;
+    text-align: center;
+}
+
+.location-map {
+    width: 100%;
+}
+
+/* Location Styles End */
+
+
+
+/* Footer Styles */
+
+.footer-wrap {
+    margin: 3% 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: solid #20822B 1vw;
+    border-bottom: solid #20822B 1vw;
+}
+
+.footer-copy__wrap {
+    margin: 5vw;
+}
+
+.footer-copy-header {
+    font-size: 7.5vw;
+    padding-bottom: 1vw;
+    font-weight: 900;
+}
+
+.footer-copy {
+    font-size: 5vw;
+}
+
+/* Footer Styles */
+
+
+@media only screen and (min-width: 480px) {
+    .content-block {
+        width: 100%;
+        min-height: 600px;
+        padding: 5%;
+    }
+    
+    /* nav styles */ 
+    
+    .nav-wrap {
+        width: 100%;
+    }
+    
+    .nav-item__wrap {
+        width: 25%;
+    }
+    
+    .nav-item {
+        font-size: 3vw;
+    }
+    
+    .nav-logo__wrap {
+        width: 25%;
+        padding: 0.5% 5%;
+    }
+    
+    .nav-logo {
+        width: 50px;
+    }
+    
+    /* nav styles End */ 
+    
+    
+    /* Header Styles  */
+    
+    .header-block {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-content__wrap {
+        height: 100vh;
+        min-height: 600px;
+        padding: 10%;
+    }
+    
+    .header-title {
+        font-size: 20vw;
+    }
+    
+    .header-subtitle {
+        font-size: 9vw;
+    }
+    
+    
+    /* Header Styles  End */
+    
+    /* Menu Styles */
+    
+    /* Menu Styles End */
+    
+    /* quote Styles */
+    
+    .quote__wrap {
+    }
+    
+    .quote-copy {
+
+    }
+    
+    /* quote Styles End */
+    
+    /* Location Styles */
+
+    .location-title {
+        padding-left: 5%;
+    }
+    
+    /* Location Styles End */
+    
+    
+    
+    /* Footer Styles */
+    
+    /* Footer Styles */
+}
+
+
+@media only screen and (min-width: 940px) {
+    .content-block {
+        width: 100%;
+        min-height: 600px;
+        padding: 5%;
+    }
+    
+    /* nav styles */ 
+    
+    .nav-wrap {
+        width: 100%;
+    }
+    
+    .nav-item__wrap {
+        width: 250px;
+    }
+    
+    .nav-item {
+
+        font-size: 30px;
+    }
+    
+    .nav-logo__wrap {
+        width: 30%;
+        padding: 10px 50px;
+    }
+    
+    .nav-logo {
+        width: 60px;
+    }
+    
+    /* nav styles End */ 
+    
+    
+    /* Header Styles  */
+    
+    .header-block {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-content__wrap {
+        height: 100vh;
+        min-height: 600px;
+        padding: 100px;
+    }
+    
+    .header-title {
+        font-size: 130px;
+    }
+    
+    .header-subtitle {
+        font-size: 60px;
+    }
+    
+    
+    /* Header Styles  End */
+    
+    /* Menu Styles */
+    .menu__wrap {
+        width: 80%;
+        margin: 5% auto;
+        flex-direction: row;
+    }
+    
+    .menu-title {
+        font-size: 80px;
+        text-align: left;
+    }
+    
+    .menu-subtitle__wrap {
+        width: 30%;
+    }
+    
+    .menu-section__wrap {
+        width: 70%;
+    }
+    
+    .menu-subtitle {
+        font-size: 40px;
+    }
+
+    .menu-choices {
+        width: 100%;
+        font-size: 1.5vw;
+    }
+    
+    .menu-item__wrap {
+        width: 42%;
+        margin: 0 2.5% 5%;
+    }
+    
+    .menu-item-title__wrap {
+        margin-bottom: 10px;
+    }
+    
+    .menu-item-title,
+    .menu-item-price {
+        font-size: 2vw;
+    }
+
+    .menu-item-copy {
+        font-size: 1.5vw;
+    }
+    
+    .menu-item-image {
+        width: 100%;
+        min-height: 300px;
+    }
+    
+    /* Menu Styles End */
+    
+    /* quote Styles */
+    
+    .quote__wrap {
+        height: 25vw;
+        flex-direction: row;
+    }
+    
+    .quote-copy {
+        width: 65%;
+        font-size: 3.5vw;
+    }
+
+    .quote-content__wrap {
+        margin: 0vw;
+    }
+    
+    /* quote Styles End */
+    
+    /* Location Styles */
+
+    .location__wrap {
+        padding-top: 100px;
+    }
+    
+    .location-content__wrap {
+        min-height: 300px;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .location-title {
+        font-size: 80px;
+        text-align: left;
+    }
+    
+    .location-image {
+        width: 50%;
+        height: auto;
+    }
+    
+    .location-map {
+        width: 50%;
+        height: auto;
+    }
+    
+    /* Location Styles End */
+    
+    
+    
+    /* Footer Styles */
+    
+    .footer-wrap {
+        margin: 3% 5%;
+        flex-direction: row;
+        border-top: solid #20822B 10px;
+        border-bottom: solid #20822B 10px;
+    }
+
+    .footer-copy__wrap {
+        margin: 2vw;
+    }
+    
+    .footer-copy-header {
+        font-size: 2.5vw;
+        padding-bottom: 1vw;
+    }
+    
+    .footer-copy {
+        font-size: 1.5vw;
+    }
+    
+    /* Footer Styles */
+}
+
+@media only screen and (min-width: 1440px) {
+    .content-block {
+        width: 100%;
+        min-height: 600px;
+        padding: 5%;
+    }
+    
+    
+    /* Header Styles  */
+    
+    .header-block {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-content__wrap {
+        height: 100vh;
+        min-height: 600px;
+    }
+    
+    .header-title {
+        font-size: 130px;
+    }
+    
+    .header-subtitle {
+        font-size: 60px;
+    }
+    
+    
+    /* Header Styles  End */
+    
+    /* Menu Styles */
+    .menu__wrap {
+        width: 80%;
+        margin: 5% auto;
+        flex-direction: row;
+    }
+    
+    .menu-title {
+        font-size: 80px;
+        text-align: left;
+    }
+    
+    .menu-subtitle__wrap {
+        width: 20%;
+    }
+    
+    .menu-section__wrap {
+        width: 80%;
+    }
+    
+    .menu-subtitle {
+        font-size: 40px;
+    }
+    
+    .menu-item__wrap {
+        width: 42%;
+        margin: 0 2.5% 5%;
+    }
+    
+    .menu-item-title__wrap {
+        margin-bottom: 10px;
+    }
+    
+    .menu-item-title,
+    .menu-item-price {
+        font-size: 2vw;
+    }
+
+    .menu-item-copy {
+        font-size: 1.5vw;
+    }
+    
+    .menu-item-image {
+        width: 100%;
+        min-height: 300px;
+    }
+    
+    /* Menu Styles End */
+    
+    /* quote Styles */
+    
+    .quote__wrap {
+        height: 25vw;
+        flex-direction: row;
+    }
+    
+    .quote-copy {
+        width: 65%;
+        font-size: 3.5vw;
+    }
+
+    .quote-content__wrap {
+        margin: 0vw;
+    }
+    
+    /* quote Styles End */
+    
+    /* Location Styles */
+    
+    .location-content__wrap {
+        min-height: 300px;
+        flex-direction: row;
+    }
+    
+    .location-image {
+        width: 50%;
+        height: auto;
+    }
+    
+    .location-map {
+        width: 50%;
+        height: auto;
+    }
+    
+    /* Location Styles End */
+    
+    
+    
+    /* Footer Styles */
+    
+    .footer-wrap {
+        margin: 3% 5%;
+        flex-direction: row;
+    }
+
+    .footer-copy__wrap {
+        margin: 2vw;
+    }
+    
+    .footer-copy-header {
+        font-size: 2.5vw;
+        padding-bottom: 1vw;
+    }
+    
+    .footer-copy {
+        font-size: 1.5vw;
+    }
+    
+    /* Footer Styles */
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0;
+        transform: translateY(-20px);
+    } 
+    100% { 
+        opacity: 1;
+        transform: translateY(0px);
+     } 
+} 
