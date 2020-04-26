@@ -211,15 +211,16 @@ input, select {
 
 .menu-item-title {
     width: 80%;
+    line-height: 125%;
 }
 
 .menu-choices {
     text-align: center;
-    margin: 1vw auto;
+    margin: 2vw auto;
     text-transform: capitalize;
     line-height: 125%;
     width: 60%;
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .menu-item-copy {
@@ -246,6 +247,15 @@ input, select {
 .menu-item-image-3 {
     background-image: url('./assets/pho-nam-special.jpg');
 }
+
+.menu-item-image-4 {
+    background-image: url('./assets/pho-nam-3.jpg');
+}
+
+.menu-item-image-6 {
+    background-image: url('./assets/thai-boba.jpg');
+}
+
 
 /* Menu Styles End */
 
@@ -333,6 +343,8 @@ input, select {
 
 .footer-copy {
     font-size: 5vw;
+    color: white;
+    text-decoration: none;
 }
 
 /* Footer Styles */
@@ -498,6 +510,8 @@ input, select {
     
     .menu-subtitle__wrap {
         width: 30%;
+        margin-bottom: 0;
+        border-right: 3px solid white
     }
     
     .menu-section__wrap {
@@ -511,6 +525,7 @@ input, select {
     .menu-choices {
         width: 100%;
         font-size: 1.5vw;
+        padding: 0 2vw;
     }
     
     .menu-item__wrap {
